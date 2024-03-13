@@ -39,6 +39,7 @@ namespace JSONOperations
                 txtJSONFilePath.Text = openFilePathforJSON.FileName;
                 var filePath = (txtJSONFilePath.Text);
                 _JSONDataasString = File.ReadAllText(filePath);
+                //var data123 = File.ReadAllBytes(filePath);
                 _JSONDataasString = JsonConvert.SerializeObject(_JSONDataasString);
             }
         }
